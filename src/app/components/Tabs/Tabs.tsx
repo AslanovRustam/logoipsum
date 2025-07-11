@@ -2,6 +2,8 @@ import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
 // Utils
 import { ACTIVITY_TABS } from "@/app/contants/activity";
+// Images
+import SearchIcon from "../../../../public/icons/search.svg";
 // Styles
 import styles from "./tabs.module.css";
 
@@ -55,6 +57,10 @@ function Tabs({ activeTab, selectTab, tabs }: Props) {
             width: underlineStyle.width,
           }}
         />
+        <li className={styles.item}>
+          <SearchIcon className={styles.icon} />
+          Search
+        </li>
       </ul>
     </div>
   );

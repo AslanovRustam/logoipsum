@@ -12,6 +12,8 @@
   font-size: 16px;
   line-height: 150%;
   transition: var(--transition);
+  display: flex;
+  align-items: center;
 
   &:hover,
   &:focus {
@@ -29,6 +31,9 @@
   border-radius: 10px;
   background: linear-gradient(90deg, #6b57f5 0%, #a758e3 100%), #6b57f5;
   transition: left 0.3s ease, width 0.3s ease;
+}
+.icon {
+  margin-right: 7px;
 }
 @media (max-width: 1440px) {
   .item {

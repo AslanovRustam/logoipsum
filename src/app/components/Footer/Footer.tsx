@@ -1,8 +1,6 @@
 import styles from "./footer.module.css";
 
-type Props = {};
-
-export default function Footer({}: Props) {
+export default function Footer() {
   return (
     <footer className={styles.footer}>
       <p>Copyright © 2025 SpreadYourCause.com. All rights reserved.</p>

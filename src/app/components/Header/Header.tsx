@@ -9,9 +9,7 @@ import Question from "../../../../public/icons/question.svg";
 // Styles
 import styles from "./header.module.css";
 
-type Props = {};
-
-export default function Header({}: Props) {
+export default function Header() {
   return (
     <header className={styles.header}>
       <Link href={ROUTES.home}>
