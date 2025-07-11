@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  padding: 35px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  border-radius: 0px 25px 25px 25px;
+  background: var(--pink-bg);
+  max-width: 1159px;
+  margin-left: auto;
+  margin-top: 35px;
+}
+.text {
+  font-size: 18px;
+  line-height: 155%;
+  opacity: 0.8;
+}

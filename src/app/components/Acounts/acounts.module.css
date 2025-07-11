@@ -1,0 +1,33 @@
+.title {
+  color: var(--accent-color);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+.list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 11px;
+  background: var(--pink-gradient-bg);
+}
+.icon {
+  display: block;
+  color: var(--white-color);
+  transition: var(--transition);
+  width: 32px;
+  height: 32px;
+
+  &:hover,
+  &:focus {
+    scale: 1.1;
+  }
+}

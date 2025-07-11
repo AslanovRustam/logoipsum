@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.avatar {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+}
+.name {
+  font-size: 16px;
+  font-weight: 700;
+}
+.email {
+  font-size: 14px;
+  opacity: 0.5;
+  transition: var(--transition);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+@media (max-width: 1440px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

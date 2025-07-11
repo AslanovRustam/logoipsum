@@ -1,0 +1,11 @@
+.normal {
+  color: rgba(69, 65, 102, 0.8);
+  font-size: 17px;
+  line-height: 155%;
+  font-weight: 500;
+}
+
+.hashtag {
+  color: var(--accent-color);
+  font-weight: 600;
+}

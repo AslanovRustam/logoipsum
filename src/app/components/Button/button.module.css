@@ -1,0 +1,86 @@
+.button {
+  padding: 10px 32px 12px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+  background-color: transparent;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 12px;
+  border: 1px solid var(--white-color);
+  cursor: pointer;
+  transition: var(--transition);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--white-color);
+  }
+}
+.fulWidth {
+  width: 100%;
+}
+.transparent {
+}
+.white {
+  color: var(--accent-color);
+  background-color: var(--white-color);
+
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background: var(--pink-gradient-bg);
+  }
+}
+.gradient {
+  background: var(--pink-gradient-bg);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background: var(--white-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.textGradient {
+  background: var(--pink-gradient-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background: var(--pink-gradient-bg);
+    -webkit-text-fill-color: inherit;
+  }
+}
+.textGradient {
+  position: relative;
+  color: transparent;
+  background: var(--pink-gradient-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-color: var(--accent-color);
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+.textGradient::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--white-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.textGradient:hover::after,
+.textGradient:focus::after {
+  opacity: 1;
+}

@@ -1,0 +1,37 @@
+.list {
+  position: relative;
+  padding: 31px 0 27px;
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  border-bottom: 4px solid var(--pink-bg);
+}
+.item {
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%;
+  transition: var(--transition);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.active {
+  color: var(--accent-color);
+}
+
+.underline {
+  position: absolute;
+  bottom: -2px;
+  height: 4px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #6b57f5 0%, #a758e3 100%), #6b57f5;
+  transition: left 0.3s ease, width 0.3s ease;
+}
+@media (max-width: 1440px) {
+  .item {
+    font-size: 12px;
+  }
+}

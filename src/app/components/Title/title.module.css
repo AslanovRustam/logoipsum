@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+  color: var(--dark-color);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 124.615%;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+
+  span {
+    color: rgba(29, 26, 59, 0.2);
+  }
+}
